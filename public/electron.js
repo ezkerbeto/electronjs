@@ -7,18 +7,17 @@ const isDev = require('electron-is-dev');
 
 let mainWindow;
 
-process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
+/* process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'; */
 
 function createWindow() {
     mainWindow = new BrowserWindow({
         width: 900,
         height: 680,
-        /* frame: false, */
-        titleBarStyle: 'hidden',
+        /* titleBarStyle: 'hidden',
         titleBarOverlay: {
             color: '#2f3241',
             symbolColor: '#74b1be'
-        }
+        } */
     });
     mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
     if (isDev) {
