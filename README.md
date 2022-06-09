@@ -1,14 +1,17 @@
 # REACT DESKTOP APP
-### Download project
-* Download
-* run `yarn`
-* run in dev `yarn electron-dev`
 ## Necessary packages
 * [Node](https://nodejs.org/es/ 'Node')
 * [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm 'npm')
 * [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable 'Yarn')
+### Dont necessary in global
 * [Electron](https://www.electronjs.org/ 'Electron')
-<details><summary><h2>Create and configure<h2></summary>
+
+### Download project
+* Download
+* run `yarn`
+* run in dev `yarn electron-dev`
+
+<details><summary><h2>Create and configure from scratch<h2></summary>
   
 <p>  
 
