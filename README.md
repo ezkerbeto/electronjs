@@ -8,18 +8,17 @@
   
 <p>  
 
-
 ## Create react app
-```bash
+``` bash
 npx create-react-app react-desktop-app
 ```
-```bash
+``` bash
 cd react-desktop-app
 ```
-```bash
+``` bash
 yarn
 ```
-```bash
+``` bash
 yarn start
 ```
 ## Add electron to react app
@@ -78,9 +77,89 @@ app.on('activate', () => {
 BROWSER=none
 ```
 ## Run app
-```bash
+``` bash
 yarn react-app-dev
 ```
+## Warning Content-Security-Policy
+### public/index.html
+#### after utf-8
+``` html
+<meta http-equiv="Content-Security-Policy" content="script-src 'self'" />
+```
+#### TO CREATE THE EXE, REMOVE THIS
+</p>
+
+</details>
+  
+<details><summary><h2>Optional config<h2></summary>
+  
+<p> 
+  
+## public/electron.js
+### BrowserWindow
+``` js
+mainWindow = new BrowserWindow({
+    width: 900,
+    height: 680,
+    titleBarStyle: 'hidden',
+    titleBarOverlay: {
+        color: '#2f3241',
+        symbolColor: '#74b1be'
+    }
+});
+```
+### before createWindow
+``` js
+process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
+```
+## public/index.html
+### body
+``` html
+<body style="padding: 0; margin:0">
+  <div style="-webkit-app-region: drag; width: 100%;height: 35px; background: #2f3241">
+    <h2 style="padding: 0; margin:0; color: white">&nbsp;create-react-app</h2>
+  </div>
+  <div id="root"></div>
+</body>
+```
+</p>
+
+</details>
+
+<details><summary><h2>Build and executable configuration<h2></summary>
+  
+<p>    
+  
+## Add command to package.json
+### before scripts
+``` json
+"author": "ezker"
+"homepage": "./",
+"license": "MIT"
+```
+### inside scripts
+``` json
+"electron-pack": "electron-builder -c.extraMetadata.main=build/electron.js",
+"preelectron-pack": "yarn build"
+```
+### after devDependencies
+``` json
+"build": {
+  "appId": "com.ezker.react-desktop-app",
+  "files": [
+    "build/**/*",
+    "node_modules/**/*"
+  ],
+  "directories": {
+    "buildResources": "assets"
+  }
+}
+```
+## Create exe
+``` bash
+yarn electorn-pack --win
+```
+  
 </p>
 
 </details>
