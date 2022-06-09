@@ -32,6 +32,7 @@ yarn add wait-on concurrently –dev
 yarn add electron-is-dev
 ```
 ## Create electron configs  
+### public/electron.js
 ``` js
 const electron = require('electron');
 const app = electron.app;
