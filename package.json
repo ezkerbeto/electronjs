@@ -15,6 +15,7 @@
   "main": "public/electron.js",
   "author": "EzkeRmz",
   "homepage": "./",
+  "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -49,7 +50,7 @@
     "wait-on": "^6.0.1"
   },
   "build": {
-    "appId": "com.ezker.reactdesktopapp",
+    "appId": "com.ezker.react-desktop-app",
     "files": [
       "build/**/*",
       "node_modules/**/*"

@@ -1,9 +1,13 @@
-function App() {
+export const App = () => {
   return (
-    <h1>
-      Template de app de escritorio con React
-    </h1>
-  );
+    <div>
+      <h3>
+        Prueba
+      </h3>
+      <button>
+        BTN
+      </button>
+    </div>
+  )
 }
 
-export default App;
