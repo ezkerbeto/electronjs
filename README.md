@@ -84,7 +84,7 @@ BROWSER=none
 ```
 ## Run app
 ``` bash
-yarn react-app-dev
+yarn electron-dev
 ```
 ## Warning Content-Security-Policy
 ### public/index.html
