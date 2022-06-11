@@ -29,9 +29,15 @@ yarn
 yarn start
 ```
 ## Add electron to react app
-* `yarn add electron electron-builder –dev`
-* `yarn add wait-on concurrently –dev` 
-* `yarn add electron-is-dev`
+``` bash
+yarn add electron electron-builder –-dev
+```
+``` bash
+yarn add wait-on concurrently -–dev
+```
+``` bash
+yarn add electron-is-dev
+```
 ## Create electron configs  
 ### public/electron.js
 ``` js
