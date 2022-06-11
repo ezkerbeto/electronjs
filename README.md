@@ -17,7 +17,7 @@
 
 ## Create react app
 ``` bash
-yarn create react-app react-desktop-app
+npx create-react-app react-desktop-app
 ```
 ``` bash
 cd react-desktop-app
