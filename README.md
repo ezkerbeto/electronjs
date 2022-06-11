@@ -146,8 +146,8 @@ process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 ### before scripts
 ``` json
 "author": "ezker",
-  "homepage": "./",
-  "license": "MIT",
+"homepage": "./",
+"license": "MIT",
 ```
 ### inside scripts
 ``` json
