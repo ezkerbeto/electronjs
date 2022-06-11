@@ -145,9 +145,9 @@ process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 ## Add command to package.json
 ### before scripts
 ``` json
-"author": "ezker"
+"author": "ezker",
 "homepage": "./",
-"license": "MIT"
+"license": "MIT",
 ```
 ### inside scripts
 ``` json
