@@ -169,7 +169,7 @@ process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true';
 ```
 ## Create exe
 ``` bash
-yarn electorn-pack --win
+yarn electron-pack --win
 ```
   
 </p>
