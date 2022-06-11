@@ -30,10 +30,10 @@ yarn start
 ```
 ## Add electron to react app
 ``` bash
-yarn add electron electron-builder –-dev
+yarn add electron electron-builder --dev
 ```
 ``` bash
-yarn add wait-on concurrently -–dev
+yarn add wait-on concurrently --dev
 ```
 ``` bash
 yarn add electron-is-dev
