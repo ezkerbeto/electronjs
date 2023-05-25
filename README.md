@@ -82,7 +82,7 @@ app.on('activate', () => {
 ```
 ### inside scripts
 ``` json
-"electron-dev": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\""
+"electron-dev": "concurrently \"react-scripts start\" \"electron .\""
 ```
 ## Create .env in /
 ``` env
